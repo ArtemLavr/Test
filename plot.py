@@ -30,21 +30,9 @@ trace5 = go.Scatter(
     mode='lines',
     name = 'zigzagC', # Style name/legend entry with html tags
 )
-trace6 = go.Scatter(
-    x=Trend['x'],
-    y=Trend['zdn'],
-    mode='markers',
-    name = 'Untested Level', # Style name/legend entry with html tags
-)
 
-trace7 = go.Scatter(
-    x=Trend['x'],
-    y=Trend['zup'],
-    mode='lines',
-    name = 'Untested Levels', # Style name/legend entry with html tags
-)
 
-data = ([trace1, trace5, trace6, trace7])
+data = ([trace1, trace5])
 
 
 layout = go.Layout(
